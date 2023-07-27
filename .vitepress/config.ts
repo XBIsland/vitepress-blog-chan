@@ -1,27 +1,18 @@
-import { DefaultTheme, defineConfigWithTheme } from 'vitepress'
+import { DefaultTheme, defineConfigWithTheme, defineConfig } from 'vitepress'
+import { getPosts } from './theme/serverUtils'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme<DefaultTheme.Config | any>({
   title: ' Chan',
-  description: '个人记录2',
-  srcDir: 'posts', // 指定文章目录
+  description: '前端博客，Front-end Programmer Blog',
   themeConfig: {
     ...frontmatter(),
-
-    // https://vitepress.dev/reference/default-theme-config
+    posts: await getPosts(),
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+      { text: '🏡Blogs', link: '/' },
+      { text: '🚀Archives', link: '/pages/archives' },
+      { text: '🏷️Tags', link: '/pages/tags' },
+      { text: '🐕About', link: '/pages/about' }
     ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/XBIsland' }],

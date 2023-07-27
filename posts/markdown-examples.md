@@ -1,5 +1,9 @@
 ---
 title: Markdown Extension Examples
+date: 2023-07-23
+tags:
+  - markdown
+aside: 'left'
 ---
 
 # Markdown Extension Examples
@@ -87,3 +91,5 @@ This is a details block.
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+
+### sss

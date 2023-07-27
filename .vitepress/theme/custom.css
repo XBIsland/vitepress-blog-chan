@@ -1,0 +1,19 @@
+@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.6.0/style.min.css");
+
+:root {
+  --vp-c-bg: #faf0f2;
+
+  --vp-c-brand: #fc809d;
+  --vp-c-brand-light: #FE7F9C;
+  --vp-c-brand-lighter: #FDA4BA;
+  --vp-c-brand-lightest: #FCBACB;
+  --vp-c-brand-dark: #fa688a;
+  --vp-c-brand-darker: #fd5d83;
+
+
+  /* normal text font */
+  --vp-font-family-base: "LXGW WenKai Lite", sans-serif;
+
+  /* code font */
+  --vp-font-family-mono: "LXGW WenKai Mono Lite", sans-serif;
+}

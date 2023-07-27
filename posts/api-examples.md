@@ -1,5 +1,8 @@
 ---
 title: Runtime API Examples
+date: 2023-07-07
+tags:
+  - javascript
 ---
 
 # Runtime API Examples
