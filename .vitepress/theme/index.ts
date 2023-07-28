@@ -5,6 +5,7 @@ import MyLayout from '../../components/MyLayout/index.vue'
 import Tags from '../../components/Tags.vue'
 import Archives from '../../components/Archives.vue'
 import About from '../../components/About.vue'
+import 'uno.css'
 import './custom.css'
 
 export default {

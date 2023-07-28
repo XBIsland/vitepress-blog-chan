@@ -4,9 +4,11 @@ import { globby } from 'globby'
 import dayjs from 'dayjs'
 
 export async function getPosts() {
-  let paths = await globby(['posts/**.md'], {
-    ignore: ['node_modules', 'README.md']
-  })
+  // let paths = await globby(['posts/**.md'], {
+  //   ignore: ['node_modules', 'README.md']
+  // })
+
+  let paths = await getPostMDFilePaths()
 
   let posts = await Promise.all(
     paths.map(async path => {
@@ -27,4 +29,14 @@ export async function getPosts() {
 
 function _compareDate(obj1, obj2) {
   return obj1.frontMatter.date < obj2.frontMatter.date ? 1 : -1
+}
+
+async function getPostMDFilePaths() {
+  return await globby(['posts/**.md'], {
+    ignore: ['node_modules', 'README.md']
+  })
+}
+
+export async function getPostLength() {
+  return (await getPostMDFilePaths()).length
 }

@@ -1,5 +1,5 @@
 <template>
-  <div>dog</div>
+  <div class="mb-50">dog</div>
   <h1>123</h1>
 </template>
 
