@@ -22,7 +22,7 @@
           :key="item"
           class="border-solid border-2 cursor-pointer rounded-lg shadow-2xl hover:scale-102 transition-all"
         >
-          <article class="p-5.5">
+          <article class="p-5.5" @click="toAticle(item.regularPath)">
             <h2
               class="text-lg truncate font-medium mb-1.5 color-[--vp-c-brand]"
             >
@@ -56,8 +56,10 @@
 
 <script setup lang="ts">
 import { useOffsetPagination } from '@vueuse/core'
-import { useData } from 'vitepress'
+import { useData, useRouter, withBase } from 'vitepress'
 import { computed } from 'vue'
+
+const { go } = useRouter()
 
 const { theme } = useData()
 const posts = computed(() => theme.value.posts)
@@ -82,6 +84,10 @@ const list = computed(() => {
 
   return posts.value.slice(start, end)
 })
+
+const toAticle = path => {
+  go(withBase(path))
+}
 </script>
 
 <style scoped lang="scss">

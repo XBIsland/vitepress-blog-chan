@@ -18,7 +18,7 @@ export async function getPosts() {
 
       return {
         frontMatter: data,
-        regularPath: `/${path}`
+        regularPath: `/${path.replace('.md', '')}`
       }
     })
   )

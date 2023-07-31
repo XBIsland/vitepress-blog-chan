@@ -10,6 +10,10 @@ export default defineConfigWithTheme<DefaultTheme.Config | any>({
     avator: '/images/avator.jpg',
     posts: await getPosts(),
     postLength: await getPostLength(),
+    comment: {
+      src: 'https://utteranc.es/client.js',
+      repo: 'XBIsland/vitepress-blog-chan'
+    },
     nav: [
       { text: '🏡Blogs', link: '/' },
       { text: '🚀Archives', link: '/pages/archives' },

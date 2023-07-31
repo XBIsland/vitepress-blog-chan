@@ -5,6 +5,7 @@ import MyLayout from '../../components/MyLayout/index.vue'
 import Tags from '../../components/Tags.vue'
 import Archives from '../../components/Archives.vue'
 import About from '../../components/About.vue'
+import Comments from '../../components/Comments.vue'
 import 'uno.css'
 import './custom.css'
 
@@ -20,5 +21,6 @@ export default {
     app.component('Tags', Tags)
     app.component('Archives', Archives)
     app.component('About', About)
+    app.component('Comments', Comments)
   }
 }
