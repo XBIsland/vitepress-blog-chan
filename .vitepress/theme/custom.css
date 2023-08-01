@@ -35,7 +35,6 @@
   --vp-avator-border: #3f4e4f;
 }
 
-
 .btn {
   @apply color-[--vp-c-brand-dark] text-xl;
 }
