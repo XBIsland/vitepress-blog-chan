@@ -3,7 +3,7 @@ import { getPostLength, getPosts } from './theme/serverUtils'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme<DefaultTheme.Config | any>({
-  title: 'Camus Chan',
+  title: 'Yoki Chan',
   description: '前端博客，Front-end Programmer Blog',
   themeConfig: {
     ...frontmatter(),

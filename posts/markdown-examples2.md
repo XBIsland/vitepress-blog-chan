@@ -1,6 +1,6 @@
 ---
 title: Markdown Extension Examples2
-date: 2023-07-23
+date: 2022-07-02
 tags:
   - markdown
 aside: 'left'
